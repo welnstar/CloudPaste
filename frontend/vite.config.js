@@ -421,7 +421,7 @@ export default defineConfig(({ command, mode }) => {
       proxy: {
         // 当 VITE_BACKEND_URL 为本地地址时，将请求代理到本地worker
         "/api": {
-          target: env.VITE_BACKEND_URL || "http://localhost:8787",
+          target: env.VITE_BACKEND_URL || "https://cloudpaste-backend.weln.qzz.io",
           changeOrigin: true,
           secure: false,
           // 打印代理日志
